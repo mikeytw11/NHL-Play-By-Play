@@ -798,6 +798,3 @@ final_columns = ['season', 'game_id', 'game_date', 'season_type', 'event_index',
 
 final_pbp = full_pbp[final_columns].copy()
 final_pbp = final_pbp.sort_values(['game_id', 'game_seconds','event_index'])
-
-# export the final pbp data to a csv file
-final_pbp.to_csv('data/final_test.csv', index = False)
